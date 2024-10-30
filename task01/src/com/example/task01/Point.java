@@ -22,14 +22,8 @@ public class Point {
         y = tmp * -1;
     }
 
-    //Возникшая проблема: для обозначения дистанции между 2 точками требуется 2 точки, но тест требует
-    //использовать только 1 вызов точки???
-    double distance(Point p1, Point p2) {
-        return Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2));
-    }
-
-    double distance(Point point){
-        return 0;
+    double distance(Point point) {
+        return Math.sqrt(Math.pow(point.x - this.x, 2) + Math.pow(point.y - this.y, 2));
     }
 
     public String toString() {
